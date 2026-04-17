@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Trivia CLI Game</title>
+  <style>
+    body {font-family: Arial, sans-serif; margin: 2rem;}
+    .question {font-weight: bold; margin-bottom: 1rem;}
+    .choices button {display: block; margin: 0.3rem 0;}
+    #feedback {margin-top: 1rem; font-style: italic;}
+    #timer {font-weight: bold;}
+  </style>
+</head>
+<body>
+  <h1>Trivia Quiz</h1>
+  <div id="timer">Time: 0s</div>
+  <div id="quiz">
+    <div class="question" id="question"></div>
+    <div class="choices" id="choices"></div>
+    <button id="next" style="display:none;">Next</button>
+    <div id="feedback"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
