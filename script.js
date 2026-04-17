@@ -46,6 +46,7 @@ feedbackEl.textContent = '';
   nextBtn.style.display = 'none';
   // add click listeners
   choicesEl.querySelectorAll('button').forEach(btn => {
+    // we are converting the string index back to number here
     btn.addEventListener('click', () => handleAnswer(parseInt(btn.dataset.index)));
   });
 }
